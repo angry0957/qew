@@ -1,0 +1,53 @@
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+[stats] {
+  text-align: center;
+}
+
+.metric {
+  position: relative;
+  min-width: 30%;
+  width: 30%;
+  flex: 1;
+  padding: 10px;
+}
+
+.metric:not(:last-child):after {
+  content: '';
+  background: #40444b;
+  width: 1px;
+  height: 80%;
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+/*.metric:not(:last-child) {*/
+/*border-right: 1px solid #40444b;*/
+/*}*/
+
+/*
+content: '';
+    background: #40444b;
+    width: 1px;
+    height: 80%;
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: 30px;
+ */

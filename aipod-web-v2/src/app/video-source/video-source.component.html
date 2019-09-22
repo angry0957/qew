@@ -1,0 +1,18 @@
+<a>
+    <div class="user-block block text-center" (click)="changeStream(streamId)">
+        <img src="/assets/img/{{sourceImage}}.jpg" alt="..." class="img-fluid" height="100px">
+        <a class="user-title">
+            <h3 class="h5">{{feedName}}</h3>
+        </a>
+        <br>
+        <div [style.color]="streamingStatus ? 'darkgreen' : 'crimson'">
+            <button type="button" class="btn btn-sm btn-toggle" data-toggle="button" aria-pressed="true" autocomplete="off">
+                <div class="handle"></div>
+            </button>
+            <br>
+            <div class="contributions" [style.color]="streamingStatus ? 'darkgreen' : ''">
+              Streaming {{streamingStatus ? 'ON' : 'OFF'}}
+            </div>
+        </div>
+    </div>
+</a>
